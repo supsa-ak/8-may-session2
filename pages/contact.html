@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website | Home</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        footer {
+            background-color: grey;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            margin-left: 43vw;
+        }
+
+        input {
+            display: inline;
+            width: 20%;
+            padding: 10px;
+            margin: 10px;
+        }
+        #message{
+            border: 2px solid green;
+            background-color: greenyellow;
+            border-radius: 3px;
+            text-align: center;
+            margin: 0 200px 0 200px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img id="logo-img" src="../logo.png" alt="Logo Image">
+        <ul>
+            <a href="/">Home</a>
+            <a href="/pages/about.html">About</a>
+            <a href="/pages/order.html">Order</a>
+            <a href="/pages/contact.html">Contact</a>
+        </ul>
+    </nav>
+
+    <h1>Contact Here</h1>
+
+    <p id="message">Form Submitted Successfully</p>
+
+    <form onsubmit="submitForm(event)">
+        Name:
+        <input type="text" placeholder="Name">
+        Phone:
+        <input type="number" placeholder="Phone">
+        Email:
+        <input type="email" placeholder="Email">
+        Suggestion:
+        <input type="text" placeholder="Suggestion">
+        <input type="submit">
+    </form>
+
+    <footer style="background-color: #ff7b7b">
+        <p>Copyright &copy; Restaurant.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
